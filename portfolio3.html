@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep Singh Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 27);
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(5, 5, 82);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: rgb(154, 154, 236);
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 2.5rem;
+        }
+
+        .rightsection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(148, 88, 204);
+        }
+
+        .text-grey {
+            color: grey;
+        }
+
+        #element {
+            color: rgb(148, 88, 204);
+        }
+
+        section {
+            padding: 60px 80px;
+        }
+
+        hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #9c97f1;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .project-card {
+            background-color: rgb(10, 10, 54);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .project-card h3 {
+            margin-bottom: 10px;
+            color: rgb(154, 154, 236);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Sandeep Singh Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="firstsection" id="home">
+            <div class="leftsection">
+                Hi, my name is <span class="purple">Sandeep Singh</span>. <br>I am 18 years old and from Jaipur.<br>
+                I am currently pursuing BTech.<br> I am passionate about <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="sandeep2.jpeg" alt="Sandeep Singh's photo">
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a tech enthusiast with interests in web development, artificial intelligence, and data science. I
+                enjoy building websites, learning new technologies, and solving real-world problems using programming.
+                Currently, I am enhancing my skills in AI/ML and looking forward to internships and project
+                collaborations.
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>Higher senior src </strong><br>
+                school Name - [Gaurav senior secondary school] <br>
+                Year: 2023 - 2024
+            </p>
+            <p><strong>Senior secondary</strong><br>
+                school Name - [Stepwise international sr. sec. school] <br>
+                year: 2021 - 2022
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio website built using HTML, CSS, and JavaScript to showcase my skills, education,
+                    and projects.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Weather App</h3>
+                <p>Created a weather forecasting app using JavaScript and OpenWeatherMap API. Users can search for
+                    real-time weather by city.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Student Result System</h3>
+                <p>A simple CRUD-based student result management system using JavaScript and localStorage for learning
+                    purpose.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="https://mail.google.com/mail/u/0/#inbox"
+                    style="color:#9c97f1">bannasandeep7568@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/feed/" target="_blank"
+                    style="color:#9c97f1">linkedin.com/in/sandeep-singh</a></p>
+            <p>Github: <a href="https://github.com/" target="_blank"
+                    style="color: #9c97f1">Github.com/in/sandeep-singh</a></p>
+        </section>
+
+    </main>
+
+    <!-- Typed.js for typing effect -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['a Data Scientist.', 'a Web Developer.', 'learning AI/ML.'],
+            typeSpeed: 50,
+            loop: true
+        });
+    </script>
+
+</body>
+
+</html>
